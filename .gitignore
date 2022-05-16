@@ -1,3 +1,5 @@
-target/
-.idea
+/.idea/
+/terget/
 *.iml
+/.allure/
+/allure-results/
