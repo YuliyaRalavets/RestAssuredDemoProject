@@ -22,6 +22,13 @@ public class Specifications {
                 .build();
     }
 
+    public static RequestSpecification requestSoapSpecification (String url){
+        return new RequestSpecBuilder()
+                .setBaseUri(url)
+                .setContentType("text/xml")
+                .build();
+    }
+
     public static void installSpecification(RequestSpecification requestSpec, ResponseSpecification responseSpec){
         RestAssured.requestSpecification = requestSpec;
         RestAssured.responseSpecification = responseSpec;
