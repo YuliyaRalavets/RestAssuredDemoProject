@@ -1,4 +1,4 @@
-package reqres.logToAllure;
+package reqres;
 
 import Specifications.Specifications;
 import io.qameta.allure.restassured.AllureRestAssured;
@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 
-public class ToAllureNoPojoTest {
+public class NoPojoTest {
     private final static String URL = "https://reqres.in/";
 
     @BeforeTest
